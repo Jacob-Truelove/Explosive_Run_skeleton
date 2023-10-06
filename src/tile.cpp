@@ -1,7 +1,9 @@
 #include "../headers/tile.hpp"
+#include "../headers/DeathTile.hpp"
 
-tile::tile(){
-   
+tile::tile(int x, int y){
+   pos.x = x;
+   pos.y = y;
 }
 
 bool tile::contact(){
@@ -14,7 +16,7 @@ int tile::contact_dir(){
 
 void tile::explode(){
     int checkpoint[2] = {10,10};
-    DeathTile explosion(checkpoint, pos.x, pos.y+1, player);
-    std::cout << "BOOM!\n";
+    DeathTile explosion(pos.x, pos.y+1);
+    std::cout << "\nBOOM!\n";
     explosion.contact();
 }

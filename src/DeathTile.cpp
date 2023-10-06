@@ -1,11 +1,10 @@
+#include "../headers/tile.hpp"
 #include "../headers/DeathTile.hpp"
 
 
-DeathTile::DeathTile(int checkpoint[2], int x, int y, Player player) : tile(){
+DeathTile::DeathTile( int x, int y) : tile::tile(x, y){
     pos.x = x;
     pos.y = y;
-    this->checkpoint.x = checkpoint[0];
-    this->checkpoint.y = checkpoint[1];
     this->player = player;
 }
 
@@ -15,6 +14,6 @@ bool DeathTile::contact(){
 }
 
 bool DeathTile::kill(){
-    std::cout << "Player died. respawning at " << checkpoint.x << "x, " << checkpoint.y << "y\n";
+    std::cout << "Player died. respawning...\n";
     return true;
 }

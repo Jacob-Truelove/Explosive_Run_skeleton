@@ -1,7 +1,10 @@
+#ifndef BLANK_H_
+#define BLANK_H_
+
 #pragma once
 #include "tile.hpp"
 
-class blank : private tile 
+class blank : public tile 
 {
     private:
         position pos;
@@ -9,3 +12,5 @@ class blank : private tile
         blank(int x, int y);
         bool contact();
 };
+
+#endif

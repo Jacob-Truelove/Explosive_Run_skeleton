@@ -17,7 +17,7 @@ void TileMap::generate(char *lvl_name){
     if(generated == false)
         for(std::string s : ascii_map){
             for(int i = 0; i < s.length(); i++){
-                if((char*)s[i] == " "){}
+                if(s.at(i) == ' '){}
                     
             }
         }

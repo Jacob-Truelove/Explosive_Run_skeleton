@@ -2,13 +2,12 @@
 #include "tile.hpp"
 #include <string>
 
-class DeathTile : private tile {
+class DeathTile : public tile {
     private:
         position pos;
-        position checkpoint;
         Player player;
     public:
-        DeathTile(int checkpoint[2], int x, int y, Player player);
+        DeathTile(int x, int y);
         bool contact();
         bool kill();
 };
