@@ -20,3 +20,7 @@ void tile::explode(){
     std::cout << "\nBOOM!\n";
     explosion.contact();
 }
+
+void tile::print_pos(){
+    std::cout << "\n" << pos.x << "\t" << pos.y;
+}

@@ -11,4 +11,5 @@ class tile{
         virtual bool contact();
         int contact_dir();
         void explode();
+        void print_pos();
 };

@@ -9,4 +9,6 @@ class Player{
     public:
         Player();
         position to_pos();
+        void update_pos(int x, int y);
+        void touch();
 };
