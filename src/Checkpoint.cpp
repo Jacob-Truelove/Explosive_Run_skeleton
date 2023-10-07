@@ -1,6 +1,6 @@
 #include "../headers/Checkpoint.hpp"
 
-Checkpoint::Checkpoint(int x, int y){
+Checkpoint::Checkpoint(int x, int y) : tile(x, y) {
     pos.x = x;
     pos.y = y;
 }

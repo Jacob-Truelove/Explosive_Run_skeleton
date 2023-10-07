@@ -1,7 +1,7 @@
 #include "../headers/TileMap.hpp"
 
 TileMap::TileMap(Player *player){
-    player = player;
+    this->player = player;
 }
 
 void TileMap::generate(char *lvl_name){
@@ -38,6 +38,7 @@ void TileMap::generate(char *lvl_name){
                 }
                 if(s.at(i) == 'o'){
                     player->update_pos(j, i);
+                    map.push_back(&tempb);
                     max++;
                 }
             }

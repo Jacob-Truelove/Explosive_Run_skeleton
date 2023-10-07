@@ -3,7 +3,7 @@
 #include "Player.hpp"
 
 class tile{
-    private:
+    protected:
         position pos;
         Player player;
     public:

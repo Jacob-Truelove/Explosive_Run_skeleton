@@ -3,9 +3,6 @@
 #include <string>
 
 class DeathTile : public tile {
-    private:
-        position pos;
-        Player player;
     public:
         DeathTile(int x, int y);
         bool contact();
