@@ -4,6 +4,7 @@
 
 class tile{
     protected:
+        tiletype type;
         position pos;
         Player player;
     public:

@@ -18,7 +18,6 @@ void tile::explode(){
     int checkpoint[2] = {10,10};
     DeathTile explosion(pos.x, pos.y+1);
     std::cout << "\nBOOM!\n";
-    explosion.contact();
 }
 
 void tile::print_pos(){

@@ -38,10 +38,17 @@ void TileMap::generate(char *lvl_name){
                 }
                 if(s.at(i) == 'o'){
                     player->update_pos(j, i);
+                    tempb = blank(j, i);
                     map.push_back(&tempb);
                     max++;
                 }
             }
             j++;
         }
+}
+
+void TileMap::update(){
+    int i=0, j=0;
+
+    
 }

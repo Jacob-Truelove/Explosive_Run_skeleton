@@ -15,5 +15,6 @@ class TileMap{
     public:
         TileMap(Player *player);
         void generate(char *lvl_name);
+        void update();
         void check_contact();
 };

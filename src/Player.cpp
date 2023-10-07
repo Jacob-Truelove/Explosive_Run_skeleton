@@ -12,5 +12,4 @@ position Player::to_pos(){
 void Player::update_pos(int x, int y){
     pos.x = x;
     pos.y = y;
-    std::cout << "\nPlayer position is " << pos.x << "\t" << pos.y;
 }
