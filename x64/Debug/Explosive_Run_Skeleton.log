@@ -1,0 +1,3 @@
+﻿  main.cpp
+MSVCRTD.lib(exe_winmain.obj) : error LNK2019: unresolved external symbol WinMain referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\jetfi\OneDrive\Documents\Code\C++\Explosive Run\x64\Debug\Explosive_Run_Skeleton.exe : fatal error LNK1120: 1 unresolved externals

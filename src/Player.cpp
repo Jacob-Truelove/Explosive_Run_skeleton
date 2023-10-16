@@ -1,7 +1,10 @@
 #include "../headers/Player.hpp"
 
 Player::Player(){
-
+    pos.x = 0;
+    pos.y = 0;
+    spawn.x = 0;
+    spawn.y = 0;
 }
 
 position Player::to_pos(){

@@ -10,7 +10,9 @@
 				"-g",
 				"*.cpp",
 				"-o",
-				"game.exe"
+				"game.exe",
+				"glfw3.lib",
+				"opengl32.lib"
 			],
 			"options": {
 				"cwd": "${fileDirname}"

@@ -2,6 +2,7 @@
 #include "../headers/TileMap.hpp"
 #include "../headers/DeathTile.hpp"
 #include "../headers/blank.hpp"
+#include <GLFW/glfw3.h>
 
 int main(){
     int pos[2] = {10, 10};
@@ -17,4 +18,6 @@ int main(){
 
     death->explode();
     death->contact();
+
+    return 0;
 }
